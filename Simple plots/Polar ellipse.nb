@@ -1,0 +1,205 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7537,        197]
+NotebookOptionsPosition[      6936,        177]
+NotebookOutlinePosition[      7427,        195]
+CellTagsIndexPosition[      7384,        192]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"f1", "[", 
+     RowBox[{"a_", ",", " ", "d_", ",", "fi_"}], "]"}], " ", ":=", " ", 
+    RowBox[{"a", "+", 
+     RowBox[{"d", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"d", "-", 
+         RowBox[{"a", "*", 
+          RowBox[{"Cos", "[", "fi", "]"}]}]}], ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"d", "*", 
+          RowBox[{"Cos", "[", "fi", "]"}]}], "-", "a"}], ")"}]}]}]}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"f2", "[", 
+     RowBox[{"a_", ",", "d_", ",", "fi_"}], "]"}], ":=", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"a", "*", "a"}], "-", 
+       RowBox[{"d", "*", "d"}]}], ")"}], "/", 
+     RowBox[{"(", 
+      RowBox[{"a", "-", 
+       RowBox[{"d", "*", 
+        RowBox[{"Cos", "[", "fi", "]"}]}]}], ")"}]}]}], "\[IndentingNewLine]", 
+   RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"PolarPlot", "[", 
+        RowBox[{
+         RowBox[{"f1", "[", 
+          RowBox[{"a", ",", " ", "d", ",", "fi"}], "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"fi", ",", "0", ",", 
+           RowBox[{"2", " ", "Pi"}]}], "}"}]}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Plot", "[", 
+        RowBox[{
+         RowBox[{"f1", "[", 
+          RowBox[{"a", ",", " ", "d", ",", "fi"}], "]"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"fi", ",", "0", ",", 
+           RowBox[{"2", " ", "Pi"}]}], "}"}]}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"PolarPlot", "[", 
+        RowBox[{
+         RowBox[{"f2", "[", 
+          RowBox[{"a", ",", " ", "d", ",", "fi"}], "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"fi", ",", "0", ",", 
+           RowBox[{"2", " ", "Pi"}]}], "}"}]}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Plot", "[", 
+        RowBox[{
+         RowBox[{"f2", "[", 
+          RowBox[{"a", ",", " ", "d", ",", "fi"}], "]"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"fi", ",", "0", ",", 
+           RowBox[{"2", " ", "Pi"}]}], "}"}]}], "]"}], ","}], 
+      "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a", ",", " ", "5"}], "}"}], ",", "1", ",", "10", ",", 
+       "0.1"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"d", ",", " ", "3"}], "}"}], ",", "1", ",", "10", ",", 
+       "0.1"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"filling", ",", 
+       RowBox[{"{", 
+        RowBox[{
+        "None", ",", "Axis", ",", "Top", ",", "Bottom", ",", "Automatic", ",",
+          "1", ",", "0.5", ",", "0", ",", 
+         RowBox[{"-", "0.5"}], ",", 
+         RowBox[{"-", "1"}]}], "}"}]}], "}"}]}], "\[IndentingNewLine]", 
+    "]"}]}]}]], "Code",
+ CellFrame->3,
+ InitializationCell->False,
+ CellChangeTimes->{{3.892537346254068*^9, 3.892537377806887*^9}, 
+   3.892537560070137*^9, {3.892537604652116*^9, 3.8925376523811827`*^9}, {
+   3.892537746947034*^9, 3.8925378287776275`*^9}, {3.892538026158227*^9, 
+   3.892538179656171*^9}, {3.8925382447949085`*^9, 3.8925382523151913`*^9}, {
+   3.8925382936098857`*^9, 3.8925382951673365`*^9}, {3.8925383261801987`*^9, 
+   3.892538335173255*^9}, {3.892538410442694*^9, 3.8925384258839703`*^9}, {
+   3.8925393602468076`*^9, 3.892539396312277*^9}, {3.892539500854356*^9, 
+   3.8925396945280576`*^9}, {3.892539995652995*^9, 3.8925400501830215`*^9}, 
+   3.894539439681534*^9},
+ CellLabel->"In[1]:=",ExpressionUUID->"fb2b7adc-1ec2-4aa9-b5ae-25b47970829a"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 5, $CellContext`d$$ = 
+    3, $CellContext`filling$$ = None, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a$$], 5}, 1, 10, 0.1}, {{
+       Hold[$CellContext`d$$], 3}, 1, 10, 0.1}, {
+      Hold[$CellContext`filling$$], {
+      None, Axis, Top, Bottom, Automatic, 1, 0.5, 0, -0.5, -1}}}, 
+    Typeset`size$$ = {1012., {90., 96.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 5, $CellContext`d$$ = 
+        3, $CellContext`filling$$ = None}, "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> {
+        PolarPlot[
+         $CellContext`f1[$CellContext`a$$, $CellContext`d$$, \
+$CellContext`fi], {$CellContext`fi, 0, 2 Pi}], 
+        Plot[
+         $CellContext`f1[$CellContext`a$$, $CellContext`d$$, \
+$CellContext`fi], {$CellContext`fi, 0, 2 Pi}], 
+        PolarPlot[
+         $CellContext`f2[$CellContext`a$$, $CellContext`d$$, \
+$CellContext`fi], {$CellContext`fi, 0, 2 Pi}], 
+        Plot[
+         $CellContext`f2[$CellContext`a$$, $CellContext`d$$, \
+$CellContext`fi], {$CellContext`fi, 0, 2 Pi}], Null}, 
+      "Specifications" :> {{{$CellContext`a$$, 5}, 1, 10, 
+         0.1}, {{$CellContext`d$$, 3}, 1, 10, 0.1}, {$CellContext`filling$$, {
+         None, Axis, Top, Bottom, Automatic, 1, 0.5, 0, -0.5, -1}}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{1073., {172., 179.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.8945394086292467`*^9, 3.8951602366957097`*^9, 
+  3.895161185790887*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"52b20540-07bb-44be-b3d3-e516537acc52"]
+}, Open  ]]
+},
+NotebookEventActions->{"WindowClose" -> {Null}},
+WindowSize->{1837, 1021},
+WindowMargins->{{-214, Automatic}, {Automatic, 160}},
+TaggingRules->{"TryRealOnly" -> False},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 9, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"021bb970-e624-41b2-813f-6f31cecc0468"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 3810, 98, 418, "Code",ExpressionUUID->"fb2b7adc-1ec2-4aa9-b5ae-25b47970829a",
+ InitializationCell->False],
+Cell[4393, 122, 2527, 52, 374, "Output",ExpressionUUID->"52b20540-07bb-44be-b3d3-e516537acc52"]
+}, Open  ]]
+}
+]
+*)
+
