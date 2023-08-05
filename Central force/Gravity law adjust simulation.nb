@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     39688,        854]
-NotebookOptionsPosition[     38719,        831]
-NotebookOutlinePosition[     39205,        849]
-CellTagsIndexPosition[     39162,        846]
+NotebookDataLength[     37427,        785]
+NotebookOptionsPosition[     36564,        763]
+NotebookOutlinePosition[     37050,        781]
+CellTagsIndexPosition[     37007,        778]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -32,10 +32,10 @@ Cell[BoxData[{
       RowBox[{"\"\<WindowClose\>\"", "\[Rule]", 
        RowBox[{
        "FrontEndTokenExecute", "[", "\"\<DeleteGeneratedCells\>\"", "]"}]}], 
-      "}"}]}]}], "]"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      "}"}]}]}], "]"}], "\[IndentingNewLine]", "\n", 
   RowBox[{"(*", 
    RowBox[{"Experiment", " ", "with", " ", "known", " ", "solutions"}], 
-   "*)"}], "\n", 
+   "*)"}], "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{
     RowBox[{
@@ -78,7 +78,7 @@ Cell[BoxData[{
          RowBox[{"ry", "[", "t", "]"}], ",", "t"}], "}"}], "\[Element]", 
        "Reals"}], ",", 
       RowBox[{"p", ">", 
-       RowBox[{"-", "2"}]}]}], "}"}]}], ";"}], "\n"}], "\[IndentingNewLine]", 
+       RowBox[{"-", "2"}]}]}], "}"}]}], ";"}], "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"equ", "=", 
    RowBox[{
@@ -109,7 +109,7 @@ Cell[BoxData[{
    RowBox[{"Flatten", "[", 
     RowBox[{"{", 
      RowBox[{"equ", ",", "conditions"}], "}"}], "]"}]}], 
-  "\[IndentingNewLine]"}], "\n", 
+  "\n"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"sol", "=", 
    RowBox[{"ParametricNDSolveValue", "[", 
@@ -120,7 +120,7 @@ Cell[BoxData[{
       RowBox[{"t", ",", "0", ",", "Tmax"}], "}"}], ",", 
      RowBox[{"{", 
       RowBox[{"GM", ",", "p", ",", "vx\:2080", ",", "vy\:2080", ",", "Tmax"}],
-       "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+       "}"}]}], "]"}]}], "\n", 
   RowBox[{"(*", 
    RowBox[{"Plot", "[", 
     RowBox[{
@@ -132,7 +132,7 @@ Cell[BoxData[{
          RowBox[{"ry", "[", "t", "]"}]}], "}"}], "/.", "sol"}], "]"}], ",", 
      RowBox[{"{", 
       RowBox[{"t", ",", "0", ",", "20"}], "}"}]}], "]"}], "*)"}], 
-  "\n"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{"Manipulate", "[", "\[IndentingNewLine]", "\t", 
   RowBox[{
    RowBox[{"ParametricPlot", "[", "\[IndentingNewLine]", "\t\t", 
@@ -369,8 +369,9 @@ Cell[BoxData[
                  None, BaseStyle -> {}, Evaluator -> Automatic, Method -> 
                  "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
                 Dynamic[{
-                  Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                   AbsoluteCurrentValue[Magnification]}]], 
+                  Automatic, 
+                   3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
                GraphicsBox[{{}, {}, {
                   GrayLevel[0.55], 
                   AbsoluteThickness[1.5], 
@@ -480,9 +481,9 @@ Cell[BoxData[
                  GridLines -> {None, None}, GridLinesStyle -> Directive[
                   GrayLevel[0.5, 0.4]], ImageSize -> 
                 Dynamic[{
-                  Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                   AbsoluteCurrentValue[Magnification]}], 
-                LabelStyle -> {FontFamily -> "Arial"}, 
+                  Automatic, 
+                   3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}], LabelStyle -> {FontFamily -> "Arial"}, 
                 Method -> {"ScalingFunctions" -> None}, 
                 PlotRange -> {All, All}, PlotRangeClipping -> True, 
                 PlotRangePadding -> {Automatic, Automatic}, 
@@ -527,8 +528,9 @@ Cell[BoxData[
                  None, BaseStyle -> {}, Evaluator -> Automatic, Method -> 
                  "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
                 Dynamic[{
-                  Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                   AbsoluteCurrentValue[Magnification]}]], 
+                  Automatic, 
+                   3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
                GraphicsBox[{{}, {}, {
                   GrayLevel[0.55], 
                   AbsoluteThickness[1.5], 
@@ -638,9 +640,9 @@ Cell[BoxData[
                  GridLines -> {None, None}, GridLinesStyle -> Directive[
                   GrayLevel[0.5, 0.4]], ImageSize -> 
                 Dynamic[{
-                  Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                   AbsoluteCurrentValue[Magnification]}], 
-                LabelStyle -> {FontFamily -> "Arial"}, 
+                  Automatic, 
+                   3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}], LabelStyle -> {FontFamily -> "Arial"}, 
                 Method -> {"ScalingFunctions" -> None}, 
                 PlotRange -> {All, All}, PlotRangeClipping -> True, 
                 PlotRangePadding -> {Automatic, Automatic}, 
@@ -744,7 +746,7 @@ $CellContext`vx\:2080$$, $CellContext`vy\:2080$$, $CellContext`Tmax$$]]], \
          "Labeled"}, {{$CellContext`vy\:2080$$, 0.975}, -2, 2, Appearance -> 
          "Labeled"}, {{$CellContext`Tmax$$, 800.}, 0, 1000, 0.1, Appearance -> 
          "Labeled"}}, "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{615., {331., 338.}},
+     ImageSizeCache->{615., {338., 345.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -757,77 +759,7 @@ $CellContext`vx\:2080$$, $CellContext`vy\:2080$$, $CellContext`Tmax$$]]], \
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{3.8951678615371466`*^9},
  CellLabel->"Out[11]=",ExpressionUUID->"955b2cad-a655-4c8a-ae0e-1326157920ca"]
-}, Open  ]],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{
-       SuperscriptBox["rx", "\[Prime]\[Prime]",
-        MultilineFunction->None], "[", "t", "]"}], ",", 
-      RowBox[{
-       SuperscriptBox["ry", "\[Prime]\[Prime]",
-        MultilineFunction->None], "[", "t", "]"}]}], "}"}], "\[Equal]", 
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{
-       RowBox[{"-", "GmM"}], " ", 
-       SuperscriptBox[
-        RowBox[{"(", 
-         RowBox[{
-          SuperscriptBox[
-           RowBox[{"Abs", "[", 
-            RowBox[{"rx", "[", "t", "]"}], "]"}], "2"], "+", 
-          SuperscriptBox[
-           RowBox[{"Abs", "[", 
-            RowBox[{"ry", "[", "t", "]"}], "]"}], "2"]}], ")"}], 
-        RowBox[{
-         FractionBox["1", "2"], " ", 
-         RowBox[{"(", 
-          RowBox[{
-           RowBox[{"-", "1"}], "-", "p"}], ")"}]}]], " ", 
-       RowBox[{"rx", "[", "t", "]"}]}], ",", 
-      RowBox[{
-       RowBox[{"-", "GM"}], " ", 
-       SuperscriptBox[
-        RowBox[{"(", 
-         RowBox[{
-          SuperscriptBox[
-           RowBox[{"Abs", "[", 
-            RowBox[{"rx", "[", "t", "]"}], "]"}], "2"], "+", 
-          SuperscriptBox[
-           RowBox[{"Abs", "[", 
-            RowBox[{"ry", "[", "t", "]"}], "]"}], "2"]}], ")"}], 
-        RowBox[{
-         FractionBox["1", "2"], " ", 
-         RowBox[{"(", 
-          RowBox[{
-           RowBox[{"-", "1"}], "-", "p"}], ")"}]}]], " ", 
-       RowBox[{"ry", "[", "t", "]"}]}]}], "}"}]}], ",", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{"rx", "[", "0", "]"}], ",", 
-      RowBox[{"ry", "[", "0", "]"}]}], "}"}], "\[Equal]", 
-    RowBox[{"{", 
-     RowBox[{"1", ",", "0"}], "}"}]}], ",", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{
-       SuperscriptBox["rx", "\[Prime]",
-        MultilineFunction->None], "[", "0", "]"}], ",", 
-      RowBox[{
-       SuperscriptBox["ry", "\[Prime]",
-        MultilineFunction->None], "[", "0", "]"}]}], "}"}], "\[Equal]", 
-    RowBox[{"{", 
-     RowBox[{"vx\:2080", ",", "vy\:2080"}], "}"}]}]}], "}"}]], "Input",
- CellChangeTimes->{{3.8951678534844346`*^9, 
-  3.895167853515683*^9}},ExpressionUUID->"f91e7b47-50b0-4ca5-96a6-\
-00e391a7351a"]
+}, Open  ]]
 },
 NotebookEventActions->{"WindowClose" -> {Null}},
 WindowSize->{1837, 1021},
@@ -852,10 +784,9 @@ Cell[CellGroupData[{
 Cell[580, 22, 11760, 249, 806, "Input",ExpressionUUID->"065498bf-45f2-4411-8f44-22adb7dc1dce"],
 Cell[12343, 273, 255, 6, 40, "Output",ExpressionUUID->"459435ee-e3a8-4009-9453-61f2ad804b2a"],
 Cell[12601, 281, 2204, 67, 55, "Output",ExpressionUUID->"811d1b20-0255-4d51-aa35-63d2058fa1cd"],
-Cell[14808, 350, 18975, 356, 80, "Output",ExpressionUUID->"e4de439b-b628-44b6-9d64-4aee94b0259d"],
-Cell[33786, 708, 2704, 50, 692, "Output",ExpressionUUID->"955b2cad-a655-4c8a-ae0e-1326157920ca"]
-}, Open  ]],
-Cell[36505, 761, 2210, 68, 50, InheritFromParent,ExpressionUUID->"f91e7b47-50b0-4ca5-96a6-00e391a7351a"]
+Cell[14808, 350, 19033, 358, 80, "Output",ExpressionUUID->"e4de439b-b628-44b6-9d64-4aee94b0259d"],
+Cell[33844, 710, 2704, 50, 706, "Output",ExpressionUUID->"955b2cad-a655-4c8a-ae0e-1326157920ca"]
+}, Open  ]]
 }
 ]
 *)
